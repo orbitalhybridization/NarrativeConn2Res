@@ -5,7 +5,7 @@
 Method used follows the Narrative Integration Reservoir experiment code from [Peter Dominey's repository](https://github.com/pfdominey/Narrative-Integration-Reservoir/).
 
 - Create 4 reservoirs based on [Conn2Res connectomes](https://www.nature.com/articles/s41467-024-44900-4).
-- Create comparison randomly connected reservoir with (ReservoirPy)[https://reservoirpy.readthedocs.io/en/latest/]
+- Create comparison randomly connected reservoir with [ReservoirPy](https://reservoirpy.readthedocs.io/en/latest)
 - Encode text from NotTheFall story using [Wikipedia2Vec](https://wikipedia2vec.github.io/wikipedia2vec/) and preprocess
 - Feed encodings as timeseries into reservoirs and save resulting states
 - Visualize autocorrelation of states
