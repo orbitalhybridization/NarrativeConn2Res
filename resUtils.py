@@ -4,7 +4,7 @@ from conn2res.connectivity import Conn
 
 networks_all = {"DA":"Dorsal Attention","DMN":"Default Mode Network","FP":"Frontoparietal","LIM":"Limbic","SM":"Somatomotor","VA":"Ventral Attention","VIS":"Visual"}
 
-def createConn2ResReservoirs(networks=None, seed=1, lr=0.05, sr=0.9, input_connectivity=0.3, activation='tanh', 
+def createConn2ResReservoirs(networks=None, seed=1, lr=0.05, sr=1.0, input_connectivity=0.5, activation='tanh', 
                             vectorDim=100, Win_random_weight=True, include_baseline=True):
 
     if networks is None:
@@ -48,7 +48,7 @@ def createConn2ResReservoirs(networks=None, seed=1, lr=0.05, sr=0.9, input_conne
 
     return reservoirs
 
-def simulateReservoirs(reservoirs, inputData, include_original_res_states=True):
+def simulateReservoirs(reservoirs, inputData):
 
     # simulate reservoirs
     states = {network: None for network in reservoirs}
@@ -56,8 +56,8 @@ def simulateReservoirs(reservoirs, inputData, include_original_res_states=True):
         res = reservoirs[network]
         states[network] = res.run(inputData)
 
-    if include_original_res_states:
-        states["Baseline"] = np.load('reservoirStatesBuffer.npy') # import states from original NIR code
-        # NOTE: this does not use the baseline res created above. might want to change/investigate this later
+    # if include_original_res_states:
+    #     states["Baseline"] = np.load('reservoirStatesBuffer.npy') # import states from original NIR code
+    #     # NOTE: this does not use the baseline res created above. might want to change/investigate this later
 
     return states

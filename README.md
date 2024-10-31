@@ -31,4 +31,4 @@ Method used follows the Narrative Integration Reservoir experiment code from [Pe
 
 ### Reservoir State Alignment and Divergence by Network
 
-![Alt text](results/alignment_divergence.png)
+![Alt text](results/alignment_divergence.png?v=2)
