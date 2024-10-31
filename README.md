@@ -28,3 +28,7 @@ Method used follows the Narrative Integration Reservoir experiment code from [Pe
 ### HMM Segmentation Size by Network
 
 ![Alt text](results/segmentation_size.png?v=2)
+
+### Reservoir State Alignment and Divergence by Network
+
+![Alt text](results/alignment_divergence.png)
