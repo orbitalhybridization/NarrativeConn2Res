@@ -15,16 +15,16 @@ Method used follows the Narrative Integration Reservoir experiment code from [Pe
 
 ### Connectivity Matrices of Conn2Res Networks
 
-![Alt text](results/Conn2Resconnectivities.png)
+![Alt text](results/Conn2Resconnectivities.png?v=2)
 
 ### Reservoir States for NotTheFall Narrative
 
-![Alt text](results/statespernetwork.png)
+![Alt text](results/statespernetwork.png?v=2)
 
 ### Autocorrelation by Network for NotTheFall Narrative
 
-![Alt text](results/states_autocorr.png)
+![Alt text](results/states_autocorr.png?v=2)
 
 ### HMM Segmentation Size by Network
 
-![Alt text](results/segmentation_size.png)
+![Alt text](results/segmentation_size.png?v=2)
