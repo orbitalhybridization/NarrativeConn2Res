@@ -35,4 +35,4 @@ Method used follows the Narrative Integration Reservoir experiment code from [Pe
 
 ### Time Constants per Network
 
-![Alt text](results/timeconsts-across-seeds.png)
+![Alt text](results/timeconsts-across-seeds.png?v=2)
