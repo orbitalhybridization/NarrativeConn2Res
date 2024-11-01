@@ -32,3 +32,7 @@ Method used follows the Narrative Integration Reservoir experiment code from [Pe
 ### Reservoir State Alignment and Divergence by Network
 
 ![Alt text](results/alignment_divergence.png?v=2)
+
+### Time Constants per Network
+
+![Alt text](results/timeconsts-across-seeds.png)

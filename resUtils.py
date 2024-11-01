@@ -56,8 +56,11 @@ def simulateReservoirs(reservoirs, inputData):
         res = reservoirs[network]
         states[network] = res.run(inputData)
 
+        # make sure to reset reservoirs after each run
+        res.reset()
+
     # if include_original_res_states:
     #     states["Baseline"] = np.load('reservoirStatesBuffer.npy') # import states from original NIR code
     #     # NOTE: this does not use the baseline res created above. might want to change/investigate this later
-
+    
     return states
